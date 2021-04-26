@@ -1,0 +1,16 @@
+.sponsors-area {
+  .owl-carousel {
+  }
+  .item {
+    img {
+      filter: grayscale(1) opacity(0.75);
+      max-height: 100px;
+      width: auto;
+      margin: 0 auto;
+      transition: $animation-s;
+      &:hover {
+        filter: grayscale(0) opacity(1);
+      }
+    }
+  }
+}

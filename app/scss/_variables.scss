@@ -1,0 +1,45 @@
+// Colors
+$white: #fff;
+$white-50: #ffffff50;
+$black: #0d0d0d;
+$gray: #666666;
+$light: #f1f1f1;
+$darkBlue: #0a124c;
+$blue: #5b6ea6;
+$blue-50: #5b6ea650;
+$blue-20: #5b6ea620;
+$lightblue: #b3c3f2;
+// $orang: #f29441;
+$orang: #ea512e;
+$orang-75: hsla(11, 82%, 55%, 0.75);
+$orang-50: hsla(11, 82%, 55%, 0.5);
+$orang-20: hsla(11, 82%, 55%, 0.2);
+$lightOrang: #f29441;
+$lightOrang-20: #f2944120;
+$lightOrang-50: #f2944150;
+$purpal: #7e84f2;
+$red: #8c0303;
+$lightRed: #f27e7e;
+
+//Font family
+$font-f-roboto: "Roboto", sans-serif;
+$font-f-publicSans: "Public Sans", sans-serif;
+$font-f-manrope: "Manrope", sans-serif;
+$font-f-catamaran: "Catamaran", sans-serif;
+
+// Font Size
+$font-sm: 0.875rem; //14px
+$font-med: 1.125rem; // 18px
+$font-lg: 1.25rem; // 20px
+$font-xl: 1.5rem; // 24px
+$font-h: 2.5rem; // 40px
+$font-h-lg: 3.75rem; // 60px
+
+// Font Weight
+$font-w-light: 300;
+$font-w-normal: 400;
+$font-w-bold: 700;
+
+//animation
+$animation-s: all 0.3s ease-in-out;
+$animation-f: all 0.2s ease-in-out;

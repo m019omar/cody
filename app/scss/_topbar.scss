@@ -1,0 +1,60 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  background-color: $darkBlue;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      font-size: $font-sm;
+      color: $white;
+      margin-right: 0.75rem;
+      a {
+        font-weight: $font-w-bold;
+        color: $white;
+        transition: $animation-s;
+        &:hover {
+          color: $lightOrang;
+        }
+      }
+      span {
+        font-weight: $font-w-bold;
+      }
+      i {
+        color: $lightOrang;
+      }
+    }
+
+    &.social {
+      li {
+        margin-right: 0.75rem;
+        a {
+          > i {
+            color: $white;
+            transition: $animation-s;
+            font-size: $font-med;
+          }
+          &:hover i {
+            color: $lightOrang;
+          }
+        }
+      }
+    }
+  }
+  .sign-in a {
+    font-size: $font-sm;
+    font-weight: $font-w-bold;
+    color: $lightOrang;
+    &:last-child {
+      color: $white;
+    }
+    &:hover {
+      color: $lightOrang;
+    }
+  }
+}

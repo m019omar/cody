@@ -1,0 +1,61 @@
+.contact-area {
+  background-color: #fdf6ed;
+  .form {
+    input,
+    textarea {
+      border-radius: 1.5rem;
+      font-size: $font-sm;
+      padding: 15px;
+      border-color: $blue-50;
+    }
+  }
+  .widget-box {
+    padding: 2.5rem 3rem 0.75rem;
+    background-color: $darkBlue;
+    border-radius: 25px;
+    // max-width: 450px;
+    &-title {
+      font-size: $font-xl;
+      font-weight: $font-w-bold;
+      color: $white;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid $blue-50;
+      margin-bottom: 2rem;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .widget {
+        display: flex;
+        &-icon {
+          min-width: 55px;
+          min-height: 55px;
+          max-width: 55px;
+          max-height: 55px;
+          margin-right: 30px;
+          background-color: $blue-50;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: $font-lg;
+          color: #fff;
+          border-radius: 5rem;
+        }
+        &-body {
+          margin-bottom: 0.75rem;
+          h3 {
+            font-size: $font-sm;
+            font-weight: $font-w-bold;
+            color: $light;
+          }
+          p {
+            color: $white-50;
+            font-size: $font-med;
+          }
+        }
+      }
+    }
+  }
+}
