@@ -20,15 +20,64 @@ btnHumburger.addEventListener('click', function () {
 
 
 
+// courses carosel
+$('.courses-owl-carousel, .tools-owl-carousel, .robots-owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: true,
+    autoplay: false,
+    // autoplayTimeout: 2000,
+    smartSpeed: 1000,
+    navText: [
+        "<i class='fa fa-angle-left'></i>",
+        "<i class='fa fa-angle-right'></i>"
+    ],
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+})
+// $('.tools-owl-carousel').owlCarousel({
+//     loop: true,
+//     margin: 10,
+//     nav: true,
+//     dots: true,
+//     autoplay: false,
+//     // autoplayTimeout: 2000,
+//     smartSpeed: 1000,
+//     navText: [
+//         "<i class='fa fa-angle-left'></i>",
+//         "<i class='fa fa-angle-right'></i>"
+//     ],
+//     responsive: {
+//         0: {
+//             items: 1
+//         },
+//         600: {
+//             items: 2
+//         },
+//         1000: {
+//             items: 3
+//         }
+//     }
+// })
 
-
-// carosel
-$('.owl-carousel').owlCarousel({
+// sponsores carosel
+$('.sponsors-owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
     autoplay: true,
-    autoplayTimeout: 3000,
+    // autoplayTimeout: 2000,
+    smartSpeed: 1500,
     responsive: {
         0: {
             items: 1

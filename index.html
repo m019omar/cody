@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="app/css/owl.carousel.min.css">
   <link rel="stylesheet" href="app/css/bootstrap.min.css">
   <link rel="stylesheet" href="app/css/all.min.css">
-  <link rel="stylesheet" href="/app/css/syle.css">
+  <link rel="stylesheet" href="/app/scss/syle.css">
 
   <title>Cody Academy</title>
 
@@ -312,38 +312,378 @@
   </section>
 
 
-  <!-- Kids -->
-  <section id="courses" class="kids-area default-padding">
+  <!-- courses -->
+  <section id="courses" class="courses-area default-padding">
     <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="site-heading text-center">
+            <h5>OuR Courses</h5>
+            <h2>Why Choose Us</h2>
+          </div>
+        </div>
+      </div>
       <div class="row">
 
-        <div class="col-lg-5">
-          <h5 class="text-primary fw-bold">Classes</h5>
-          <h1 class="text-blue fw-bold">Popular Classes</h1>
+        <div class="col-lg-3">
+          <div class="nav-boxs nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+            aria-orientation="vertical">
+            <!-- Box Nav Course 01 -->
+            <div class="nav-box active" id="coding-tab" data-bs-toggle="pill" data-bs-target="#coding" type="button"
+              role="tab" aria-controls="coding" aria-selected="true">
+              <h2 class="head">
+                <span>01</span>
+                <i class="fa fa-laptop-code"></i>
+              </h2>
+              <h5 class="title">Coding for kids</h5>
+            </div>
+
+            <!-- Box Nav Course 02 -->
+            <div class="nav-box" id="tools-tab" data-bs-toggle="pill" data-bs-target="#tools" type="button" role="tab"
+              aria-controls="tools" aria-selected="true">
+              <h2 class="head">
+                <span>02</span>
+                <i class="fa fa-keyboard"></i>
+              </h2>
+              <h5 class="title">Professional Tools and Languages </h5>
+            </div>
+
+            <!-- Box Nav Course 03 -->
+            <div class="nav-box" id="robots-tab" data-bs-toggle="pill" data-bs-target="#robots" type="button" role="tab"
+              aria-controls="robots" aria-selected="true">
+              <h2 class="head">
+                <span>03</span>
+                <i class="fa fa-robot"></i>
+              </h2>
+              <h5 class="title">Robots for Kids</h5>
+            </div>
+
+            <!-- Box Nav Course 04 -->
+            <div class="nav-box" id="graphics-tab" data-bs-toggle="pill" data-bs-target="#graphics" type="button"
+              role="tab" aria-controls="graphics" aria-selected="true">
+              <h2 class="head">
+                <span>04</span>
+                <i class="fa fa-project-diagram"></i>
+              </h2>
+              <h5 class="title">Graphics for kids</h5>
+            </div>
+
+            <!-- Box Nav Course 05 -->
+            <div class="nav-box" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+              type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+              <h2 class="head">
+                <span>05</span>
+                <i class="fa fa-language"></i>
+              </h2>
+              <h5 class="title">English</h5>
+            </div>
+
+            <!-- Box Nav Course 06 -->
+            <div class="nav-box" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+              type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+              <h2 class="head">
+                <span>06</span>
+                <i class="fa fa-square-root-alt"></i>
+              </h2>
+              <h5 class="title">Mathematics</h5>
+            </div>
+
+          </div>
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-9">
           <div class="container-fluid">
             <div class="row">
 
-              <div class="col-lg-7">
-                <div class="image">
-                  <img class="img-fluid" src="https://source.unsplash.com/4-4WPFLVhAY/400x350" alt="">
+              <div class="col-lg-12">
+                <div class="tab-content" id="v-pills-tabContent">
+
+                  <!-- tab -->
+                  <div class="tab-pane fade show active" id="coding" role="tabpanel" aria-labelledby="coding-tab">
+                    <div>
+                      <h3 class="fw-bold text-blue">Coding for kids Including:</h3>
+                      <p></p>
+                    </div>
+                    <div class="courses-owl-carousel owl-carousel owl-theme">
+                      <!-- Item -->
+                      <div class="item">
+                        <div class="course">
+                          <!-- Image -->
+                          <div class="course-image">
+                            <a href="#">
+                              <img src="images/courses/minecraft.png" alt="">
+                            </a>
+                          </div>
+                          <!-- content -->
+                          <div class="course-content">
+                            <a href="#">
+                              <h3 class="title">Minecraft modding </h3>
+                            </a>
+                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Item -->
+                      <div class="item">
+                        <div class="course">
+                          <!-- Image -->
+                          <div class="course-image">
+                            <a href="#">
+                              <img src="images/courses/roblox.png" alt="">
+                            </a>
+                          </div>
+                          <!-- content -->
+                          <div class="course-content">
+                            <a href="#">
+                              <h3 class="title">Roblox coding
+                              </h3>
+                            </a>
+                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Item -->
+                      <div class="item">
+                        <div class="course">
+                          <!-- Image -->
+                          <div class="course-image">
+                            <a href="#">
+                              <img src="images/courses/google.png" alt="">
+                            </a>
+                          </div>
+                          <!-- content -->
+                          <div class="course-content">
+                            <a href="#">
+                              <h3 class="title">Google blockly
+                              </h3>
+                            </a>
+                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Item -->
+                      <div class="item">
+                        <div class="course">
+                          <!-- Image -->
+                          <div class="course-image">
+                            <a href="#">
+                              <img src="images/courses/scratch.png" alt="">
+                            </a>
+                          </div>
+                          <!-- content -->
+                          <div class="course-content">
+                            <a href="#">
+                              <h3 class="title">Scratch
+                              </h3>
+                            </a>
+                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Item -->
+                      <div class="item">
+                        <div class="course">
+                          <!-- Image -->
+                          <div class="course-image">
+                            <a href="#">
+                              <img src="images/courses/ready-maker.png" alt="">
+                            </a>
+                          </div>
+                          <!-- content -->
+                          <div class="course-content">
+                            <a href="#">
+                              <h3 class="title">Ready Maker
+                              </h3>
+                            </a>
+                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- tab -->
+                  <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="tools-tab">
+                    <div>
+                      <h3 class="fw-bold text-blue">Professional Tools and Languages For <br> the next level students
+                      </h3>
+                      <p class="fs-6 text-secondary">will learn professional programming languages such as Python, Java,
+                        android and iOS application
+                        … etc.
+                      </p>
+                    </div>
+
+                    <div class="tools-owl-carousel owl-carousel owl-theme">
+
+                      <!-- Item -->
+                      <div class="item">
+                        <div class="course">
+                          <!-- Image -->
+                          <div class="course-image">
+                            <a href="#">
+                              <img src="images/courses/paython.png" alt="">
+                            </a>
+                          </div>
+                          <!-- content -->
+                          <div class="course-content">
+                            <a href="#">
+                              <h3 class="title">Paython</h3>
+                            </a>
+                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <!-- Item -->
+                      <div class="item">
+                        <div class="course">
+                          <!-- Image -->
+                          <div class="course-image">
+                            <a href="#">
+                              <img src="images/courses/java.png" alt="">
+                            </a>
+                          </div>
+                          <!-- content -->
+                          <div class="course-content">
+                            <a href="#">
+                              <h3 class="title">Java</h3>
+                            </a>
+                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Item -->
+                      <div class="item">
+                        <div class="course">
+                          <!-- Image -->
+                          <div class="course-image">
+                            <a href="#">
+                              <img src="images/courses/android.png" alt="">
+                            </a>
+                          </div>
+                          <!-- content -->
+                          <div class="course-content">
+                            <a href="#">
+                              <h3 class="title">Amdroid App Development</h3>
+                            </a>
+                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Item -->
+                      <div class="item">
+                        <div class="course">
+                          <!-- Image -->
+                          <div class="course-image">
+                            <a href="#">
+                              <img src="images/courses/ios.png" alt="">
+                            </a>
+                          </div>
+                          <!-- content -->
+                          <div class="course-content">
+                            <a href="#">
+                              <h3 class="title">Ios App Development Tools & IDEs</h3>
+                            </a>
+                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- tab -->
+                  <div class="tab-pane fade" id="robots" role="tabpanel" aria-labelledby="robots-tab">
+                    <div>
+                      <h3 class="fw-bold text-blue">Robots for Kids
+                      </h3>
+                      <p class="fs-6 text-secondary">Build Real Games and Software Make professional grade games and
+                        software using cutting edge technology.
+                        AI, IOT and Robots may be new words to hear but it is currently Technologies you will use
+                        nearest than you think. </p>
+                    </div>
+
+                    <div class="tools-owl-carousel owl-carousel owl-theme">
+                      <!-- Item -->
+                      <div class="item">
+                        <div class="course">
+                          <!-- Image -->
+                          <div class="course-image">
+                            <a href="#">
+                              <img src="images/courses/artificial.png" alt="">
+                            </a>
+                          </div>
+                          <!-- content -->
+                          <div class="course-content">
+                            <a href="#">
+                              <h3 class="title">Artificial Inteligence</h3>
+                            </a>
+                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <!-- Item -->
+                      <div class="item">
+                        <div class="course">
+                          <!-- Image -->
+                          <div class="course-image">
+                            <a href="#">
+                              <img src="images/courses/internet-of-things.png" alt="">
+                            </a>
+                          </div>
+                          <!-- content -->
+                          <div class="course-content">
+                            <a href="#">
+                              <h3 class="title">Internet Of Things</h3>
+                            </a>
+                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Item -->
+                      <div class="item">
+                        <div class="course">
+                          <!-- Image -->
+                          <div class="course-image">
+                            <a href="#">
+                              <img src="images/courses/robotics.png" alt="">
+                            </a>
+                          </div>
+                          <!-- content -->
+                          <div class="course-content">
+                            <a href="#">
+                              <h3 class="title">Robotics</h3>
+                            </a>
+                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <!-- tab -->
+                  <div class="tab-pane fade" id="graphics" role="tabpanel" aria-labelledby="graphics-tab">
+                    <div>
+                      <h3 class="text-blue fw-bold">Graphics</h3>
+                      <p class="fs-6 text-secondary mb-1">Graphics is also the main human computer interactive factor.
+                      </p>
+                      <p class="fs-6 text-secondary">UIX, Designing and more will be like a talent discovery show will
+                        select the small artists to be
+                        discovered in our show.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-5">
-                <div class="image">
-                  <img class="img-fluid" src="https://source.unsplash.com/Xz7MMD5tZwA/250x300" alt="">
-                </div>
-              </div>
-              <div class="col-lg-5">
-                <div class="image">
-                  <img class="img-fluid" src="https://source.unsplash.com/7fF0iei80AQ/250x300" alt="">
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="image">
-                  <img class="img-fluid" src="https://source.unsplash.com/37Gug7AWjoo/150x150" alt="">
-                </div>
+
               </div>
             </div>
           </div>
@@ -356,7 +696,7 @@
 
   <!-- Teacher Area -->
   <section class="teacher-area default-padding">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="site-heading text-center">
@@ -523,7 +863,7 @@
           </div>
         </div>
         <div class="col-12">
-          <div class="owl-carousel owl-theme">
+          <div class="sponsors-owl-carousel owl-carousel owl-theme">
             <div class="item">
               <img src="images/sponsors/Picture1.jpg" alt="sponsor">
             </div>
@@ -764,75 +1104,7 @@
       © <span class="text-primary">Cody Academy</span>. All Rights Reserved
     </p>
   </section>
-
-
-  <!-- 
-
-  Home
-  About
-  Contact
-  Blog
-  Careers
-
-  Request Invite
-
-
-
-  Next generation digital banking
-
-  Take your financial life online. Your Easybank account will be a one-stop-shop
-  for spending, saving, budgeting, investing, and much more.
-
-  Request Invite
-
-
-
-  Why choose Easybank?
-
-  We leverage Open Banking to turn your bank account into your financial hub. Control
-  your finances like never before.
-
-  Online Banking
-  Our modern web and mobile applications allow you to keep track of your finances
-  wherever you are in the world.
-
-  Simple Budgeting
-  See exactly where your money goes each month. Receive notifications when you’re
-  close to hitting your limits.
-
-  Fast Onboarding
-  We don’t do branches. Open your account in minutes online and start taking control
-  of your finances right away.
-
-  Open API
-  Manage your savings, investments, pension, and much more from one account. Tracking
-  your money has never been easier.
-
-
-
-  Latest Articles
-
-  By Claire Robinson
-  Receive money in any currency with no fees
-  The world is getting smaller and we’re becoming more mobile. So why should you be
-  forced to only receive money in a single …
-
-  By Wilson Hutton
-  Treat yourself without worrying about money
-  Our simple budgeting feature allows you to separate out your spending and set
-  realistic limits each month. That means you …
-
-  By Wilson Hutton
-  Take your Easybank card wherever you go
-  We want you to enjoy your travels. This is why we don’t charge any fees on purchases
-  while you’re abroad. We’ll even show you …
-
-  By Claire Robinson
-  Our invite-only Beta accounts are now live!
-  After a lot of hard work by the whole team, we’re excited to launch our closed beta.
-  It’s easy to request an invite through the site ...
-
-
+  <!--
 
   About Us
   Contact
