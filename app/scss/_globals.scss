@@ -52,6 +52,9 @@ button,
   font-weight: 400;
   border: 0;
   overflow: hidden;
+  @include breakpoints-down(small) {
+    padding: 0.575rem 1.175rem;
+  }
 
   &:hover {
     color: $white;

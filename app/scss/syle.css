@@ -56,6 +56,14 @@ button,
   overflow: hidden;
 }
 
+@media (max-width: 39.9375em) {
+  button,
+  .button,
+  .btn {
+    padding: 0.575rem 1.175rem;
+  }
+}
+
 button:hover,
 .button:hover,
 .btn:hover {
