@@ -48,18 +48,30 @@
     span {
       color: $orang;
       font-size: $font-lg;
+      @include breakpoints-down(small) {
+        font-size: $font-med;
+        margin-bottom: 00.5rem;
+      }
     }
     h2 {
       color: $darkBlue;
       font-size: $font-h;
       font-weight: $font-w-bold;
       margin: 0.75rem 0 1.5rem 0;
+      @include breakpoints-down(small) {
+        font-size: $font-xl;
+        // margin: 0.75rem 0 1.5rem 0;
+      }
     }
     p {
       color: $gray;
       font-size: $font-med;
       margin-bottom: 1.5rem;
       line-height: 1.75;
+      @include breakpoints-down(small) {
+        font-size: $font-sm;
+        margin-bottom: 0.5rem;
+      }
     }
   }
 
@@ -71,12 +83,18 @@
       display: flex;
       flex-wrap: wrap;
       align-items: flex-end;
+      @include breakpoints-down(small) {
+        margin: 0 1rem;
+      }
 
       li {
         flex: 0 0 auto;
         width: 50%;
         padding: 0 0.25rem;
         margin-bottom: 1rem;
+        @include breakpoints-down(small) {
+          width: 100%;
+        }
         > i {
           display: inline-flex;
           align-items: center;

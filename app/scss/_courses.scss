@@ -1,5 +1,12 @@
 .courses-area {
   .nav-boxs {
+    @include breakpoints-down(small) {
+      flex-direction: row !important;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      margin-bottom: 1rem;
+    }
     .nav-box {
       padding: 1.25rem;
       border-radius: 1rem;
@@ -8,6 +15,14 @@
       background-color: $blue-20;
       margin: 0 auto 0.25rem;
       width: 250px;
+      @include breakpoints-down(small) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        min-width: 150px;
+        margin: 0 0.25rem;
+      }
 
       &.active {
         background-color: $darkBlue;
@@ -16,9 +31,15 @@
           color: $white;
           display: flex;
           margin-bottom: 1.25rem;
+          @include breakpoints-down(small) {
+            margin-bottom: 0.5rem;
+          }
         }
         .title {
           font-size: $font-med;
+          @include breakpoints-down(small) {
+            font-size: $font-sm;
+          }
         }
       }
       .head {
@@ -30,6 +51,10 @@
         max-width: 170px;
         margin: 0 auto 0.5rem;
         display: none;
+        @include breakpoints-down(small) {
+          display: flex;
+          margin: 0 0 0.5rem;
+        }
         span,
         i {
           opacity: 0.5;
@@ -63,16 +88,16 @@
     }
     .course-content {
       padding: 1.25rem;
-      background-color: $white;
+      background-color: #f8f8f8;
       box-shadow: 0 0px 28px 0 rgba(0, 0, 0, 0.09);
 
       .title {
         color: $darkBlue;
         font-size: $font-lg;
         font-weight: $font-w-bold;
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-        border-bottom: 1px dashed #ea512e;
+        // padding-bottom: 1rem;
+        // margin-bottom: 1rem;
+        // border-bottom: 1px dashed #ea512e;
         transition: $animation-s;
         &:hover {
           color: $orang;
@@ -88,8 +113,8 @@
       top: 50%;
       transform: translateY(-50%);
       display: flex;
-      height: 30px;
-      width: 30px;
+      height: 40px;
+      width: 40px;
       justify-content: center;
       align-items: center;
       background-color: $orang-20 !important;
@@ -102,9 +127,15 @@
     }
     .owl-prev {
       left: -40px;
+      @include breakpoints-down(small) {
+        left: -30px;
+      }
     }
     .owl-next {
       right: -40px;
+      @include breakpoints-down(small) {
+        right: -30px;
+      }
     }
   }
   .owl-dots {

@@ -2,6 +2,9 @@
   margin-bottom: 60px;
   margin-top: -5px;
   position: relative;
+  @include breakpoints-down(small) {
+    margin-bottom: 30px;
+  }
 
   h5 {
     color: $blue;
@@ -10,6 +13,9 @@
     display: inline-block;
     position: relative;
     overflow: inherit;
+    @include breakpoints-down(small) {
+      font-size: $font-sm;
+    }
   }
   h2 {
     display: block;
@@ -20,6 +26,9 @@
     margin-bottom: 0;
     position: relative;
     line-height: 1.4;
+    @include breakpoints-down(small) {
+      font-size: $font-xl;
+    }
   }
   &::before {
     background: $orang none repeat scroll 0 0;

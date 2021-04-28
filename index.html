@@ -25,7 +25,7 @@
   <!-- Top bar -->
   <div class="top-bar">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
         <ul>
           <li>
             <i class="fa fa-phone"></i>
@@ -73,7 +73,7 @@
 
   </div>
   <!-- Header -->
-  <header class="header">
+  <header class="header sticky-top">
     <div class="container">
       <div class="overlay"></div>
       <nav class="d-flex justify-content-between align-items-center">
@@ -82,7 +82,7 @@
           <img src="images/logo.png" alt="">
         </a>
 
-        <a id="btnHumburger" href="#" class="header__toggle hide-for-desktop">
+        <a id="btnHumburger" class="header__toggle hide-for-desktop">
           <span></span>
           <span></span>
           <span></span>
@@ -105,6 +105,10 @@
         <a href="#about">About</a>
         <a href="#courses">Courses</a>
         <a href="#contact">Contact</a>
+        <a class="text-primary" href="https://codykidsacademy.com/">Register</a>
+        <a class="text-blue" href="https://codykidsacademy.com/lms/login/index.php">
+          <i class="fa fa-sign-in-alt"></i>
+          Login</a>
       </div>
     </div>
   </header>
@@ -114,15 +118,15 @@
     <div class="main-banner-item">
       <div class="container-fluid">
         <div class="row align-items-center justify-content-center">
-          <div class="col-lg-6">
+          <div class="col-lg-6 mb-5 mb-lg-0">
             <div class="main-banner-content">
               <span>Cody Kids For Golden Heads</span>
               <h1 class="fw-bold">Cody Kids Academy </h1>
               <p>Cody Kids Academy is starting as an online computer science academy for kids offering a diversity of
                 educational services, activities, and materials. </p>
               <div class="banner-btn">
-                <button class="btn btn-primary hvr-btn">Find Out More</button>
-                <button class="btn btn-secondary hvr-btn mx-2">Learn More</button>
+                <a href="#courses" class="btn btn-primary hvr-btn">Find Out More</a>
+                <a href="#about" class="btn btn-secondary hvr-btn mx-2">Learn More</a>
               </div>
             </div>
           </div>
@@ -174,11 +178,12 @@
     </div> -->
   </section>
 
+  <!-- Who We Are Section -->
   <section id="about" class="who-we-are default-padding">
 
     <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-5">
+      <div class="row justify-content-around justify-content-lg-center">
+        <div class="col-lg-5 col-9 mb-4 mb-lg-0">
           <div class="who-we-are-image">
             <img src="images/child/who-we-are.jpg" alt="" class="img-fluid">
           </div>
@@ -319,14 +324,14 @@
         <div class="col-lg-8">
           <div class="site-heading text-center">
             <h5>OuR Courses</h5>
-            <h2>Why Choose Us</h2>
+            <h2>Current Courses</h2>
           </div>
         </div>
       </div>
       <div class="row">
 
-        <div class="col-lg-3">
-          <div class="nav-boxs nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+        <div class="col-lg-3 px-0 px-xl-3">
+          <div class="nav-boxs nav flex-column nav-pills me-lg-3" id="v-pills-tab" role="tablist"
             aria-orientation="vertical">
             <!-- Box Nav Course 01 -->
             <div class="nav-box active" id="coding-tab" data-bs-toggle="pill" data-bs-target="#coding" type="button"
@@ -418,7 +423,7 @@
                             <a href="#">
                               <h3 class="title">Minecraft modding </h3>
                             </a>
-                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
                           </div>
                         </div>
                       </div>
@@ -438,7 +443,7 @@
                               <h3 class="title">Roblox coding
                               </h3>
                             </a>
-                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
                           </div>
                         </div>
                       </div>
@@ -457,7 +462,7 @@
                               <h3 class="title">Google blockly
                               </h3>
                             </a>
-                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
                           </div>
                         </div>
                       </div>
@@ -476,7 +481,7 @@
                               <h3 class="title">Scratch
                               </h3>
                             </a>
-                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
                           </div>
                         </div>
                       </div>
@@ -495,7 +500,7 @@
                               <h3 class="title">Ready Maker
                               </h3>
                             </a>
-                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
                           </div>
                         </div>
                       </div>
@@ -530,7 +535,7 @@
                             <a href="#">
                               <h3 class="title">Paython</h3>
                             </a>
-                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
                           </div>
                         </div>
                       </div>
@@ -550,7 +555,7 @@
                             <a href="#">
                               <h3 class="title">Java</h3>
                             </a>
-                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
                           </div>
                         </div>
                       </div>
@@ -569,7 +574,7 @@
                             <a href="#">
                               <h3 class="title">Amdroid App Development</h3>
                             </a>
-                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
                           </div>
                         </div>
                       </div>
@@ -588,7 +593,7 @@
                             <a href="#">
                               <h3 class="title">Ios App Development Tools & IDEs</h3>
                             </a>
-                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
                           </div>
                         </div>
                       </div>
@@ -622,7 +627,7 @@
                             <a href="#">
                               <h3 class="title">Artificial Inteligence</h3>
                             </a>
-                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
                           </div>
                         </div>
                       </div>
@@ -642,7 +647,7 @@
                             <a href="#">
                               <h3 class="title">Internet Of Things</h3>
                             </a>
-                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
                           </div>
                         </div>
                       </div>
@@ -661,7 +666,7 @@
                             <a href="#">
                               <h3 class="title">Robotics</h3>
                             </a>
-                            <a href="#" class="btn btn-primary hvr-btn">see more</a>
+                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
                           </div>
                         </div>
                       </div>
@@ -897,8 +902,8 @@
   <section id="contact" class="contact-area default-padding">
     <div class="container">
       <div class="row justify-content-between">
-        <div class="col-lg-7">
-          <div class="mb-5">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <div class="mb-lg-5 mb-3">
             <h6 class="text-primary fw-bold text-uppercase">Contact Us</h6>
             <h1 class="text-blue fw-bold ">Send A Message</h1>
           </div>
@@ -982,7 +987,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-lg-3">
+        <div class="col-lg-3 mb-4 mb-lg-0">
           <h1 class="fw-bold text-light">CODY ACADEMY</h1>
           <p class="text-white fs-6">
             Cody Kids Academy is starting as an online computer science academy for kids offering a diversity of

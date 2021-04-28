@@ -3,6 +3,10 @@
   align-items: center;
   height: 45px;
   background-color: $darkBlue;
+  @include breakpoints-down(small) {
+    height: auto;
+    display: none;
+  }
 
   ul {
     list-style: none;

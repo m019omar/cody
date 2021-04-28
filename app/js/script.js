@@ -2,6 +2,7 @@ const btnHumburger = document.querySelector("#btnHumburger");
 const body = document.querySelector('body');
 const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
+const topBar = document.querySelector('.top-bar');
 
 btnHumburger.addEventListener('click', function () {
     if (header.classList.contains('open')) {
@@ -16,6 +17,18 @@ btnHumburger.addEventListener('click', function () {
         overlay.classList.remove('fade-out');
     }
 })
+
+
+$(window).on('scroll', function () {
+    if ($(this).scrollTop() > 40) {
+        console.log('x')
+        $('.header').addClass('shadow');
+    } else {
+        $('.header').removeClass('shadow');
+    }
+})
+
+
 
 
 

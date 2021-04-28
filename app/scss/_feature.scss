@@ -2,6 +2,13 @@
   background-color: #fdf6ed;
 
   .widget {
+    display: flex;
+    flex-direction: column;
+    @include breakpoints-down(small) {
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
     &__icon {
       min-width: 65px;
       min-height: 65px;
@@ -10,6 +17,9 @@
       border-radius: 40%;
       position: relative;
       margin-bottom: 20px;
+      @include breakpoints-down(small) {
+        margin-bottom: 0px;
+      }
       img {
         position: absolute;
         bottom: -15%;
@@ -44,6 +54,10 @@
       line-height: 28px;
       color: $blue;
       max-width: 300px;
+
+      @include breakpoints-down(small) {
+        font-size: $font-sm;
+      }
     }
   }
 }

@@ -21,15 +21,24 @@
         color: $orang;
         font-size: $font-med;
         font-weight: $font-w-bold;
+        @include breakpoints-down(small) {
+          font-size: $font-med;
+        }
       }
       h1 {
         color: $darkBlue;
         font-size: $font-h-lg;
         font-weight: $font-w-bold;
         margin: 1rem 0;
+        @include breakpoints-down(small) {
+          font-size: $font-h;
+        }
       }
       p {
         color: $blue;
+        @include breakpoints-down(small) {
+          font-size: $font-sm;
+        }
       }
     }
   }
@@ -41,6 +50,9 @@
     z-index: 1;
     width: 120px;
     animation: slide-left-right 5s infinite;
+    @include breakpoints-down(small) {
+      width: 60px;
+    }
     img {
       width: 100%;
     }
@@ -48,21 +60,37 @@
   .shape-1 {
     top: 25px;
     left: 4rem;
+    @include breakpoints-down(small) {
+      top: 0.5rem;
+      left: 1rem;
+    }
   }
   .shape-2 {
     top: 70%;
     right: 40%;
     animation: slide-top-bottom 5s infinite;
+    @include breakpoints-down(small) {
+      top: 6rem;
+      right: 1rem;
+    }
   }
   .shape-3 {
     top: 70%;
     left: 4rem;
+    @include breakpoints-down(small) {
+      top: 15rem;
+      left: 1rem;
+    }
   }
   .shape-4 {
     top: 70%;
     right: 40%;
     top: 45px;
     right: 50%;
+    @include breakpoints-down(small) {
+      top: 2rem;
+      right: 1rem;
+    }
   }
 
   &::after {
@@ -74,5 +102,8 @@
     position: absolute;
     bottom: -10px;
     z-index: 1;
+    @include breakpoints-down(small) {
+      height: 80px;
+    }
   }
 }
