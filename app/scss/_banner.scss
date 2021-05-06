@@ -5,105 +5,175 @@
   // margin-bottom: 75px;
 
   .main-banner-item {
-    background-image: url(../../images/main-banner/main-banner-bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 1;
-    height: 900px;
-    display: flex;
-    align-items: center;
-    .main-banner-content {
-      max-width: 600px;
-      margin-left: auto;
-      span {
-        color: $orang;
-        font-size: $font-med;
-        font-weight: $font-w-bold;
-        @include breakpoints-down(small) {
-          font-size: $font-med;
+    .banner-carousel {
+      .item {
+        height: calc(100vh - 100px);
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+        .cover {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          max-width: auto;
+          z-index: -1;
+
+          img {
+            min-width: 100% !important;
+            max-width: unset !important;
+            width: auto;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        .item-caption {
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+          text-align: center;
+          z-index: 2;
+          h1 {
+            color: $lightOrang;
+            text-transform: uppercase;
+            font-size: $font-h-lg;
+            margin: 0;
+          }
+          p {
+            color: $light;
+            text-transform: uppercase;
+            font-size: $font-h-lg;
+            margin: 0;
+            margin-bottom: 1.5rem;
+          }
+          span {
+            display: inline-block;
+            color: $light;
+            font-size: $font-med;
+            text-transform: uppercase;
+            padding-bottom: 0.125rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid $white;
+          }
+        }
+        &::after {
+          content: " ";
+          background-color: rgba($color: #000, $alpha: 0.75);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 0;
         }
       }
-      h1 {
-        color: $darkBlue;
-        font-size: $font-h-lg;
-        font-weight: $font-w-bold;
-        margin: 1rem 0;
-        @include breakpoints-down(small) {
-          font-size: $font-h;
+      .owl-dots {
+        position: absolute;
+        bottom: 3rem;
+        right: 50%;
+        transform: translateX(50%);
+        display: flex;
+        align-items: center;
+        .owl-dot {
+          background-color: $gray;
+          height: 10px;
+          width: 10px;
+          margin: 0 0.25rem;
+          &.active {
+            background-color: $light;
+            height: 14px;
+            width: 14px;
+          }
         }
       }
-      p {
-        color: $blue;
-        @include breakpoints-down(small) {
-          font-size: $font-sm;
+      .owl-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
+        .owl-prev,
+        .owl-next {
+          width: 3rem;
+          height: 3rem;
+          font-size: 2rem;
+          color: rgba($color: $light, $alpha: 0.5);
+          &:hover {
+            color: $lightOrang;
+          }
+        }
+        .owl {
+          &-prev {
+          }
+          &-next {
+          }
         }
       }
-    }
-  }
-  .shape-1,
-  .shape-2,
-  .shape-3,
-  .shape-4 {
-    position: absolute;
-    z-index: 1;
-    width: 120px;
-    animation: slide-left-right 5s infinite;
-    @include breakpoints-down(small) {
-      width: 60px;
-    }
-    img {
-      width: 100%;
-    }
-  }
-  .shape-1 {
-    top: 25px;
-    left: 4rem;
-    @include breakpoints-down(small) {
-      top: 0.5rem;
-      left: 1rem;
-    }
-  }
-  .shape-2 {
-    top: 70%;
-    right: 40%;
-    animation: slide-top-bottom 5s infinite;
-    @include breakpoints-down(small) {
-      top: 6rem;
-      right: 1rem;
-    }
-  }
-  .shape-3 {
-    top: 70%;
-    left: 4rem;
-    @include breakpoints-down(small) {
-      top: 15rem;
-      left: 1rem;
-    }
-  }
-  .shape-4 {
-    top: 70%;
-    right: 40%;
-    top: 45px;
-    right: 50%;
-    @include breakpoints-down(small) {
-      top: 2rem;
-      right: 1rem;
     }
   }
 
-  &::after {
-    content: " ";
-    background-image: url(../../images/main-banner/banner-bg-shape.png);
-    background-size: cover;
-    width: 100%;
-    height: 120px;
-    position: absolute;
-    bottom: -10px;
-    z-index: 1;
-    @include breakpoints-down(small) {
-      height: 80px;
+  .main-banner-item {
+    .carousel-indicators {
+      align-items: center;
+      bottom: 2rem;
+      button {
+        width: 10px;
+        height: 10px;
+        border: 1px solid transparent;
+        border-radius: 1rem;
+        &.active {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+    .carousel-inner {
+      .carousel-item {
+        width: 100vw;
+        height: calc(100vh - 85px);
+
+        .carousel-caption {
+          top: 50%;
+          bottom: auto;
+          transform: translateY(-50%);
+          z-index: 2;
+          h1 {
+            color: $lightOrang;
+            font-weight: $font-w-bold;
+            text-transform: uppercase;
+          }
+          p {
+            text-transform: uppercase;
+          }
+          span {
+            text-transform: uppercase;
+            border-bottom: 1px solid $white;
+            padding-bottom: 0.25rem;
+            margin-bottom: 0.25rem;
+            display: inline-block;
+            line-height: 1.2;
+          }
+        }
+      }
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000, $alpha: 0.75);
+        z-index: 1;
+      }
     }
   }
 }

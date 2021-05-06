@@ -13,7 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;700;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="app/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="app/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app/css/bootstrap-grid.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="app/css/all.min.css">
   <link rel="stylesheet" href="/app/scss/syle.css">
 
@@ -22,56 +23,7 @@
 </head>
 
 <body>
-  <!-- Top bar -->
-  <div class="top-bar">
-    <div class="container">
-      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
-        <ul>
-          <li>
-            <i class="fa fa-phone"></i>
-            <span>Have any question? (+20) 1101952420</span>
-          </li>
-          <li>
-            <i class="fas fa-bullhorn"></i>
-            <a href="#">Become an Instructor</a>
-          </li>
-          <!-- <li>
-            <i class="fas fa-briefcase"></i>
-            <a href="#">For Enterprise</a>
-          </li> -->
-        </ul>
 
-        <div class="d-flex ">
-          <ul class="social">
-            <li>
-              <a href="https://www.facebook.com/CodyKidsAcademy" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/codykidsacademy" target="_blank">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-
-          <div class="sign-in">
-            <a href="https://codykidsacademy.com/lms" target="_blank">Register</a>
-            <a href="https://codykidsacademy.com/lms/login/index.php" target="_blank">/ <i
-                class="fa fa-sign-in-alt"></i> Login</a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
-  </div>
   <!-- Header -->
   <header class="header sticky-top">
     <div class="container">
@@ -96,8 +48,8 @@
           <a href="#contact">Contact</a>
 
         </div>
-        <a href="https://codykidsacademy.com/lms" class="btn header__cta btn-primary hide-for-mobile"
-          target="_blank">Cody Learning Platform</a>
+        <a href="https://codykidsacademy.com/lms"
+          class="waves-effect waves-light btn orange header__cta hide-for-mobile" target="_blank">Register Now</a>
 
       </nav>
       <div class="header__menu">
@@ -116,131 +68,87 @@
   <!-- Main Baner & Slider -->
   <section class="main__banner">
     <div class="main-banner-item">
-      <div class="container-fluid">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-6 mb-5 mb-lg-0">
-            <div class="main-banner-content">
-              <span>Cody Kids For Golden Heads</span>
-              <h1 class="fw-bold">Cody Kids Academy </h1>
-              <p>Cody Kids Academy is starting as an online computer science academy for kids offering a diversity of
-                educational services, activities, and materials. </p>
-              <div class="banner-btn">
-                <a href="#courses" class="btn btn-primary hvr-btn">Find Out More</a>
-                <a href="#about" class="btn btn-secondary hvr-btn mx-2">Learn More</a>
-              </div>
+      <!-- <div id="baneerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#baneerCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#baneerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#baneerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/hLvQ4-QEBAE/1920x900" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>New Technologies</h1>
+              <p class="fs-1 fw-bold">And Differnet Branches Of sciences</p>
+
+              <span>Which Needed To Build Prosperous</span> <br>
+              <span> And Progressive Community</span>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="main-banner-image">
-              <img class="img-fluid" src="images/main-banner/education-girl.jpg" alt="">
+          <div class="carousel-item">
+            <img src="images/child/who-we-are.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/child/who-we-are.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="main-banner-shape">
-      <div class="shape-1">
-        <img class="shape-1" src="images/main-banner/shape-1.png" alt="shape">
-      </div>
-      <div class="shape-2">
-        <img class="shape-2" src="images/main-banner/shape-2.png" alt="shape">
-      </div>
-      <div class="shape-3">
-        <img class="shape-3" src="images/main-banner/shape-3.png" alt="shape">
-      </div>
-      <div class="shape-4">
-        <img class="shape-4" src="images/main-banner/shape-4.png" alt="shape">
-      </div>
-    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#baneerCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#baneerCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
 
-    <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://source.unsplash.com/qDY9ahp0Mto/1600x700" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="https://source.unsplash.com/gsRi9cWCIB0/1600x700" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="https://source.unsplash.com/GDokEYnOfnE/1600x700" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div> -->
-  </section>
+      <div class="banner-carousel owl-carousel owl-theme">
+        <div class="item">
+          <div class="cover">
+            <img src="https://source.unsplash.com/162ppyjclxM/1920x800" alt="Main Image banner">
+          </div>
+          <div class="item-caption d-none d-md-block">
+            <h1>New Technologies</h1>
+            <p class="fs-1 fw-bold">And Differnet Branches Of sciences</p>
 
-  <!-- Who We Are Section -->
-  <section id="about" class="who-we-are default-padding">
+            <span>Which Needed To Build Prosperous</span> <br>
+            <span> And Progressive Community</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="cover">
+            <img src="https://source.unsplash.com/hLvQ4-QEBAE/1920x800" alt="Main Image banner">
+          </div>
+          <div class="item-caption d-none d-md-block">
+            <h1>New Technologies</h1>
+            <p class="fs-1 fw-bold">And Differnet Branches Of sciences</p>
 
-    <div class="container">
-      <div class="row justify-content-around justify-content-lg-center">
-        <div class="col-lg-5 col-9 mb-4 mb-lg-0">
-          <div class="who-we-are-image">
-            <img src="images/child/who-we-are.jpg" alt="" class="img-fluid">
+            <span>Which Needed To Build Prosperous</span> <br>
+            <span> And Progressive Community</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="cover">
+            <img src="https://source.unsplash.com/je240KkJIuA/1920x800" alt="Main Image banner">
+          </div>
+          <div class="item-caption d-none d-md-block">
+            <h1>New Technologies</h1>
+            <p class="fs-1 fw-bold">And Differnet Branches Of sciences</p>
+
+            <span>Which Needed To Build Prosperous</span> <br>
+            <span> And Progressive Community</span>
           </div>
         </div>
 
-        <div class="col-lg-6">
-          <div class="who-we-are-content ">
-            <span>Who We Are</span>
-            <h2>CODY Kids Academy </h2>
-            <p>
-              We deliver an effective educational services based on
-              prestigious educational curriculums acquired from international education standards like Code.org,
-              Codegate, U.S. curriculum ..etc.
-            </p>
-            <p>
-              Targeting the Arabic mother tongue nation to spread the programing in the next generation from the
-              softness of their nails.
-            </p>
-          </div>
-
-          <div class="who-we-are-list">
-            <ul class="">
-              <li>
-                <i class="fa fa-laptop-code"></i>
-                <h3>Preschool coding  </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non porro nihil rem.</p>
-              </li>
-              <li>
-                <i class="fa fa-building"></i>
-                <h3>Elementary school</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non porro nihil rem.</p>
-              </li>
-              <li>
-                <i class="fa fa-school"></i>
-                <h3>Middle school</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non porro nihil rem.</p>
-              </li>
-              <li>
-                <i class="fa fa-graduation-cap"></i>
-                <h3>High school</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non porro nihil rem.</p>
-              </li>
-              <!-- <li class="d-flex justify-content-center">
-                <a href="#" class="btn btn-primary hvr-btn">
-                  Read More <i class="fa fa-long-arrow-alt-right mx-1"></i>
-                </a>
-              </li> -->
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="who-we-are-shape">
-      <div class="shape">
-        <!-- <img src="images/main-banner/shape-5.png" alt=""> -->
       </div>
     </div>
   </section>
@@ -250,63 +158,41 @@
 
 
   <!-- Miisions & Vission % Values -->
-  <section class="default-feature-area default-padding">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="site-heading text-center">
-            <h5>OuR Feature</h5>
-            <h2>Why Choose Us</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
+  <section class="default-feature-area pb-0 pt-5">
     <div class="container">
       <div class="row">
 
         <div class="col-lg-4">
           <div class="widget">
-            <div class="widget__icon widget__icon_vission">
+            <div class="widget__icon ">
               <img src="images/widget/leadership.svg" alt="">
             </div>
             <div class="widget__body">
               <h5 class="widget__heading">Mission</h5>
-              <p class="widget__description">to expanding access to computer science, and increasing participation by
-                children preparing them to the new normal. increases diversity in computer science by reaching students
-                of all backgrounds where they are...
-                <!--, at their skill-level, in their schools, and in ways that inspire them
-                to keep learning. -->
-              </p>
+
             </div>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="widget">
-            <div class="widget__icon widget__icon_mission">
+            <div class="widget__icon ">
               <img src="images/widget/spyglass.svg" alt="">
             </div>
             <div class="widget__body">
               <h5 class="widget__heading">Vision</h5>
-              <p class="widget__description">We think big, but act small
-                We’re personal We’re Agile We’re responsive to feedback We’re transparent We’re thankful This is a
-                community effort
-              </p>
+
             </div>
           </div>
         </div>
 
         <div class="col-lg-4">
           <div class="widget">
-            <div class="widget__icon widget__icon_values">
+            <div class="widget__icon ">
               <img src="images/widget/value.svg" alt="">
             </div>
             <div class="widget__body">
               <h5 class="widget__heading">Values</h5>
-              <p class="widget__description">that every student in every school should have the opportunity to learn
-                computer science, just like biology, chemistry or algebra.
-                and provides the leading curriculum for computer science in the largest school districts</p>
+
             </div>
           </div>
         </div>
@@ -322,457 +208,123 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
-          <div class="site-heading text-center">
-            <h5>OuR Courses</h5>
-            <h2>Current Courses</h2>
+          <div class="head-seaction text-center">
+            <h1 class="mb-lg-3">Cody Kids <span class="text-primary">Academy</span></h1>
+            <p>is starting as an online Codeing academy for kids offering <br>
+              a lot of educational services.
+            </p>
           </div>
         </div>
       </div>
       <div class="row">
 
-        <div class="col-lg-3 px-0 px-xl-3">
-          <div class="nav-boxs nav flex-column nav-pills me-lg-3" id="v-pills-tab" role="tablist"
-            aria-orientation="vertical">
-            <!-- Box Nav Course 01 -->
-            <div class="nav-box active" id="coding-tab" data-bs-toggle="pill" data-bs-target="#coding" type="button"
-              role="tab" aria-controls="coding" aria-selected="true">
-              <h2 class="head">
-                <span>01</span>
-                <i class="fa fa-laptop-code"></i>
-              </h2>
-              <h5 class="title">Coding for kids</h5>
+        <div class="carousel">
+
+          <a class="carousel-item" href="#four!">
+            <div class="carousel-cover">
+              <img src="https://source.unsplash.com/7fF0iei80AQ/400x400">
             </div>
 
-            <!-- Box Nav Course 02 -->
-            <div class="nav-box" id="tools-tab" data-bs-toggle="pill" data-bs-target="#tools" type="button" role="tab"
-              aria-controls="tools" aria-selected="true">
-              <h2 class="head">
-                <span>02</span>
-                <i class="fa fa-keyboard"></i>
-              </h2>
-              <h5 class="title">Professional Tools and Languages </h5>
+            <div class="carousel-text">
+              <h3 class="text-uppercase text-primary">Robots For Kids</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus quidem neque officia earum
+                distinctio.</p>
+              <span href="#" class="btn gray">book now</span>
+            </div>
+          </a>
+
+          <a class="carousel-item" href="#five!">
+            <div class="carousel-cover">
+              <img src="https://source.unsplash.com/4-4WPFLVhAY/400x400">
             </div>
 
-            <!-- Box Nav Course 03 -->
-            <div class="nav-box" id="robots-tab" data-bs-toggle="pill" data-bs-target="#robots" type="button" role="tab"
-              aria-controls="robots" aria-selected="true">
-              <h2 class="head">
-                <span>03</span>
-                <i class="fa fa-robot"></i>
-              </h2>
-              <h5 class="title">Robots for Kids</h5>
+            <div class="carousel-text">
+              <h3 class="text-uppercase text-primary">Robots For Kids</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus quidem neque officia earum
+                distinctio.</p>
+              <span href="#" class="btn gray">book now</span>
+            </div>
+          </a>
+
+          <a class="carousel-item" href="#six!">
+            <div class="carousel-cover">
+              <img src="https://source.unsplash.com/je240KkJIuA/400x400">
             </div>
 
-            <!-- Box Nav Course 04 -->
-            <div class="nav-box" id="graphics-tab" data-bs-toggle="pill" data-bs-target="#graphics" type="button"
-              role="tab" aria-controls="graphics" aria-selected="true">
-              <h2 class="head">
-                <span>04</span>
-                <i class="fa fa-project-diagram"></i>
-              </h2>
-              <h5 class="title">Graphics for kids</h5>
+            <div class="carousel-text">
+              <h3 class="text-uppercase text-primary">Robots For Kids</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus quidem neque officia earum
+                distinctio.</p>
+              <span href="#" class="btn gray">book now</span>
+            </div>
+          </a>
+
+          <a class="carousel-item" href="#one!">
+            <div class="carousel-cover">
+              <img src="https://source.unsplash.com/hLvQ4-QEBAE/400x400">
             </div>
 
-            <!-- Box Nav Course 05 -->
-            <div class="nav-box" id="english-tab" data-bs-toggle="pill" data-bs-target="#english" type="button"
-              role="tab" aria-controls="english" aria-selected="true">
-              <h2 class="head">
-                <span>05</span>
-                <i class="fa fa-language"></i>
-              </h2>
-              <h5 class="title">English</h5>
+            <div class="carousel-text">
+              <h3 class="text-uppercase text-primary">Robots For Kids</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus quidem neque officia earum
+                distinctio.</p>
+              <span href="#" class="btn gray">book now</span>
+            </div>
+          </a>
+
+          <a class="carousel-item" href="#two!">
+            <div class="carousel-cover">
+              <img src="https://source.unsplash.com/O5EMzfdxedg/400x400">
             </div>
 
-            <!-- Box Nav Course 06 -->
-            <div class="nav-box" id="mathematics-tab" data-bs-toggle="pill" data-bs-target="#mathematics" type="button"
-              role="tab" aria-controls="mathematics" aria-selected="true">
-              <h2 class="head">
-                <span>06</span>
-                <i class="fa fa-square-root-alt"></i>
-              </h2>
-              <h5 class="title">Mathematics</h5>
+            <div class="carousel-text">
+              <h3 class="text-uppercase text-primary">Robots For Kids</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus quidem neque officia earum
+                distinctio.</p>
+              <span href="#" class="btn gray">book now</span>
             </div>
-
-          </div>
+          </a>
         </div>
-        <div class="col-lg-9">
-          <div class="container-fluid">
-            <div class="row">
-
-              <div class="col-lg-12">
-                <div class="tab-content" id="v-pills-tabContent">
-
-                  <!-- tab -->
-                  <div class="tab-pane fade show active" id="coding" role="tabpanel" aria-labelledby="coding-tab">
-                    <div>
-                      <h3 class="fw-bold text-blue">Coding for kids Including:</h3>
-                      <p></p>
-                    </div>
-                    <div class="courses-owl-carousel owl-carousel owl-theme">
-                      <!-- Item -->
-                      <div class="item">
-                        <div class="course">
-                          <!-- Image -->
-                          <div class="course-image">
-                            <a href="#">
-                              <img src="images/courses/minecraft.png" alt="">
-                            </a>
-                          </div>
-                          <!-- content -->
-                          <div class="course-content">
-                            <a href="#">
-                              <h3 class="title">Minecraft modding </h3>
-                            </a>
-                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Item -->
-                      <div class="item">
-                        <div class="course">
-                          <!-- Image -->
-                          <div class="course-image">
-                            <a href="#">
-                              <img src="images/courses/roblox.png" alt="">
-                            </a>
-                          </div>
-                          <!-- content -->
-                          <div class="course-content">
-                            <a href="#">
-                              <h3 class="title">Roblox coding
-                              </h3>
-                            </a>
-                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Item -->
-                      <div class="item">
-                        <div class="course">
-                          <!-- Image -->
-                          <div class="course-image">
-                            <a href="#">
-                              <img src="images/courses/google.png" alt="">
-                            </a>
-                          </div>
-                          <!-- content -->
-                          <div class="course-content">
-                            <a href="#">
-                              <h3 class="title">Google blockly
-                              </h3>
-                            </a>
-                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Item -->
-                      <div class="item">
-                        <div class="course">
-                          <!-- Image -->
-                          <div class="course-image">
-                            <a href="#">
-                              <img src="images/courses/scratch.png" alt="">
-                            </a>
-                          </div>
-                          <!-- content -->
-                          <div class="course-content">
-                            <a href="#">
-                              <h3 class="title">Scratch
-                              </h3>
-                            </a>
-                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Item -->
-                      <div class="item">
-                        <div class="course">
-                          <!-- Image -->
-                          <div class="course-image">
-                            <a href="#">
-                              <img src="images/courses/ready-maker.png" alt="">
-                            </a>
-                          </div>
-                          <!-- content -->
-                          <div class="course-content">
-                            <a href="#">
-                              <h3 class="title">Ready Maker
-                              </h3>
-                            </a>
-                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <!-- tab -->
-                  <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="tools-tab">
-                    <div>
-                      <h3 class="fw-bold text-blue">Professional Tools and Languages For <br> the next level students
-                      </h3>
-                      <p class="fs-6 text-secondary">will learn professional programming languages such as Python, Java,
-                        android and iOS application
-                        … etc.
-                      </p>
-                    </div>
-
-                    <div class="tools-owl-carousel owl-carousel owl-theme">
-
-                      <!-- Item -->
-                      <div class="item">
-                        <div class="course">
-                          <!-- Image -->
-                          <div class="course-image">
-                            <a href="#">
-                              <img src="images/courses/paython.png" alt="">
-                            </a>
-                          </div>
-                          <!-- content -->
-                          <div class="course-content">
-                            <a href="#">
-                              <h3 class="title">Paython</h3>
-                            </a>
-                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
-                          </div>
-                        </div>
-                      </div>
+      </div>
+    </div>
+  </section>
 
 
-                      <!-- Item -->
-                      <div class="item">
-                        <div class="course">
-                          <!-- Image -->
-                          <div class="course-image">
-                            <a href="#">
-                              <img src="images/courses/java.png" alt="">
-                            </a>
-                          </div>
-                          <!-- content -->
-                          <div class="course-content">
-                            <a href="#">
-                              <h3 class="title">Java</h3>
-                            </a>
-                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
-                          </div>
-                        </div>
-                      </div>
 
-                      <!-- Item -->
-                      <div class="item">
-                        <div class="course">
-                          <!-- Image -->
-                          <div class="course-image">
-                            <a href="#">
-                              <img src="images/courses/android.png" alt="">
-                            </a>
-                          </div>
-                          <!-- content -->
-                          <div class="course-content">
-                            <a href="#">
-                              <h3 class="title">Amdroid App Development</h3>
-                            </a>
-                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
-                          </div>
-                        </div>
-                      </div>
+  <!-- Conatact Area -->
+  <section id="contact" class="contact-area py-lg-5">
+    <div class="container">
+      <div class="row justify-content-between mb-0">
+        <div class="col-lg-3 offset-lg-2 text-center text-white-75">
+          <h1 class="text-uppercase m-0">Contact</h1>
+          <h6 class="m-0">Minya Governorate, Egypt</h6>
+          <h6 class="m-0">info@codykidsacademy.com</h6>
+        </div>
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <!-- <div class="mb-lg-5 mb-3">
+            <h6 class="text-primary fw-bold text-uppercase">Contact Us</h6>
+            <h1 class="text-blue fw-bold ">Send A Message</h1>
+          </div> -->
 
-                      <!-- Item -->
-                      <div class="item">
-                        <div class="course">
-                          <!-- Image -->
-                          <div class="course-image">
-                            <a href="#">
-                              <img src="images/courses/ios.png" alt="">
-                            </a>
-                          </div>
-                          <!-- content -->
-                          <div class="course-content">
-                            <a href="#">
-                              <h3 class="title">Ios App Development Tools & IDEs</h3>
-                            </a>
-                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <!-- tab -->
-                  <div class="tab-pane fade" id="robots" role="tabpanel" aria-labelledby="robots-tab">
-                    <div>
-                      <h3 class="fw-bold text-blue">Robots for Kids
-                      </h3>
-                      <p class="fs-6 text-secondary">Build Real Games and Software Make professional grade games and
-                        software using cutting edge technology.
-                        AI, IOT and Robots may be new words to hear but it is currently Technologies you will use
-                        nearest than you think. </p>
-                    </div>
-
-                    <div class="tools-owl-carousel owl-carousel owl-theme">
-                      <!-- Item -->
-                      <div class="item">
-                        <div class="course">
-                          <!-- Image -->
-                          <div class="course-image">
-                            <a href="#">
-                              <img src="images/courses/artificial.png" alt="">
-                            </a>
-                          </div>
-                          <!-- content -->
-                          <div class="course-content">
-                            <a href="#">
-                              <h3 class="title">Artificial Inteligence</h3>
-                            </a>
-                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
-                          </div>
-                        </div>
-                      </div>
-
-
-                      <!-- Item -->
-                      <div class="item">
-                        <div class="course">
-                          <!-- Image -->
-                          <div class="course-image">
-                            <a href="#">
-                              <img src="images/courses/internet-of-things.png" alt="">
-                            </a>
-                          </div>
-                          <!-- content -->
-                          <div class="course-content">
-                            <a href="#">
-                              <h3 class="title">Internet Of Things</h3>
-                            </a>
-                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Item -->
-                      <div class="item">
-                        <div class="course">
-                          <!-- Image -->
-                          <div class="course-image">
-                            <a href="#">
-                              <img src="images/courses/robotics.png" alt="">
-                            </a>
-                          </div>
-                          <!-- content -->
-                          <div class="course-content">
-                            <a href="#">
-                              <h3 class="title">Robotics</h3>
-                            </a>
-                            <!-- <a href="#" class="btn btn-primary hvr-btn">see more</a> -->
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <!-- tab Graphics -->
-                  <div class="tab-pane fade" id="graphics" role="tabpanel" aria-labelledby="graphics-tab">
-                    <div>
-                      <h3 class="text-blue fw-bold">Graphics</h3>
-                      <p class="fs-6 text-secondary mb-1">Graphics is also the main human computer interactive factor.
-                      </p>
-                      <p class="fs-6 text-secondary">UIX, Designing and more will be like a talent discovery show will
-                        select the small artists to be
-                        discovered in our show.
-                      </p>
-                    </div>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-lg-4 mb-2 mb-lg-0">
-                          <div class="overflow-hidden rounded-3">
-                            <img src="https://source.unsplash.com/BJ25B9sonUs/450x450" alt="" class="img-fluid">
-                          </div>
-                        </div>
-                        <div class="col-lg-4 mb-2 mb-lg-0">
-                          <div class="overflow-hidden rounded-3">
-                            <img src="https://source.unsplash.com/ubIWo074QlU/450x450" alt="" class="img-fluid">
-                          </div>
-                        </div>
-                        <div class="col-lg-4 mb-2 mb-lg-0">
-                          <div class="overflow-hidden rounded-3">
-                            <img src="https://source.unsplash.com/gxGtqG5ul2g/450x450" alt="" class="img-fluid">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- tab Mathematics -->
-                  <div class="tab-pane fade" id="mathematics" role="tabpanel" aria-labelledby="mathematics-tab">
-                    <div>
-                      <h3 class="text-blue fw-bold">Mathematics</h3>
-                      <p class="fs-6 text-secondary">Mathematics also is an essential ingredient in the logical thinking
-                        that we use in computer
-                        programming which is our main target to build a strong well educated generation using the
-                        future languages raising up our nation.
-                        UCMAS, Abacus & Mental Arithmetic </p>
-                    </div>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-lg-4 mb-2 mb-lg-0">
-                          <div class="overflow-hidden rounded-3">
-                            <img src="https://source.unsplash.com/_zsL306fDck/450x450" alt="" class="img-fluid">
-                          </div>
-                        </div>
-                        <div class="col-lg-4 mb-2 mb-lg-0">
-                          <div class="overflow-hidden rounded-3">
-                            <img src="https://source.unsplash.com/FIxxQDwpJ2g/450x450" alt="" class="img-fluid">
-                          </div>
-                        </div>
-                        <div class="col-lg-4 mb-2 mb-lg-0">
-                          <div class="overflow-hidden rounded-3">
-                            <img src="https://source.unsplash.com/JexAuNCfefs/450x450" alt="" class="img-fluid">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- tab English -->
-                  <div class="tab-pane fade" id="english" role="tabpanel" aria-labelledby="english-tab">
-                    <div>
-                      <h3 class="text-blue fw-bold">English</h3>
-                      <p class="fs-6 text-secondary mb-1">English as grammar, conversion, jolly phonics, I can read…
-                        etc. </p>
-                      <p class="fs-6 text-secondary">We will help our tomorrow inventors to interact with the world and
-                        to understand more of Computer development languages.</p>
-                    </div>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-lg-4 mb-2 mb-lg-0">
-                          <div class="overflow-hidden rounded-3">
-                            <img src="https://source.unsplash.com/oB2aEeE8s4A/450x450" alt="" class="img-fluid">
-                          </div>
-                        </div>
-                        <div class="col-lg-4 mb-2 mb-lg-0">
-                          <div class="overflow-hidden rounded-3">
-                            <img src="https://source.unsplash.com/ucUB9wxkPgY/450x450" alt="" class="img-fluid">
-                          </div>
-                        </div>
-                        <div class="col-lg-4 mb-2 mb-lg-0">
-                          <div class="overflow-hidden rounded-3">
-                            <img src="https://source.unsplash.com/OyCl7Y4y0Bk/450x450" alt="" class="img-fluid">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
+          <div class="form">
+            <div class="row g-3 mb-0">
+              <div class="col-lg-6">
+                <input type="email" class="form-control" placeholder="Name" aria-label="First name">
+              </div>
+              <div class="col-lg-6">
+                <input type="tel" class="form-control" placeholder="Phone" aria-label="Last name">
+              </div>
+              <div class="col-9">
+                <input type="email" class="form-control" placeholder="Your Email" aria-label="First name">
+              </div>
+              <div class="col-3">
+                <button class="waves-effect waves-light btn-large gray">CONTACT US</button>
               </div>
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
   </section>
@@ -978,96 +530,12 @@
 
 
 
-  <!-- Conatact Area -->
-  <section id="contact" class="contact-area default-padding">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-7 mb-4 mb-lg-0">
-          <div class="mb-lg-5 mb-3">
-            <h6 class="text-primary fw-bold text-uppercase">Contact Us</h6>
-            <h1 class="text-blue fw-bold ">Send A Message</h1>
-          </div>
-
-          <div class="form">
-            <div class="row g-3">
-              <div class="col-lg-6">
-                <input type="email" class="form-control" placeholder="Your Email" aria-label="First name">
-              </div>
-              <div class="col-lg-6">
-                <input type="tel" class="form-control" placeholder="Phone number" aria-label="Last name">
-              </div>
-              <div class="col-12">
-                <textarea class="form-control" rows="5" placeholder="Your Message Here "></textarea>
-              </div>
-              <div class="col">
-                <button class="btn btn-primary hvr-btn">
-                  <i class="fa fa-paper-plane"></i>
-                  Send</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="widget-box">
-            <h3 class="widget-box-title">Get In Touch </h3>
-
-            <div class="widget-box-wrapper">
-
-              <!-- widget -->
-              <div class="widget">
-                <div class="widget-icon">
-                  <i class="fas fa-phone-alt"></i>
-                </div>
-                <div class="widget-body">
-                  <h3 class="widget-title">call us :</h3>
-                  <p>(+20) 1101952420<br>
-                  </p>
-                </div>
-              </div>
-
-              <!-- widget -->
-              <div class="widget">
-                <div class="widget-icon bg-white text-primary">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="widget-body">
-                  <h3 class="widget-title">mail us :</h3>
-                  <p>Info@codykidsacademy.com
-                    <br>
-                    <!-- contact@mail.com -->
-                  </p>
-                </div>
-              </div>
-
-              <!-- widget -->
-              <div class="widget">
-                <div class="widget-icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="widget-body">
-                  <h3 class="widget-title">visit us :</h3>
-                  <p>Minya Governorate, <br>
-                    Egypt
-                  </p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
   <!-- Foorer Area -->
   <section class="footer-area">
     <div class="container">
       <div class="row">
 
-        <div class="col-lg-3 mb-4 mb-lg-0">
+        <div class="col-lg-6 mb-4 mb-lg-0">
           <h1 class="fw-bold text-light">CODY ACADEMY</h1>
           <p class="text-white fs-6">
             Cody Kids Academy is starting as an online computer science academy for kids offering a diversity of
@@ -1128,58 +596,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="footer-area-widget">
-            <h3>Photo Gallery</h3>
-            <ul class="photo-galary-list">
-              <li>
-                <a href="#">
-                  <img src="https://source.unsplash.com/qDY9ahp0Mto/150x150" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="https://source.unsplash.com/150x150/?build" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="https://source.unsplash.com/150x150/?work" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="https://source.unsplash.com/150x150/?labtop" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="https://source.unsplash.com/150x150/?children" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="https://source.unsplash.com/150x150/?boy" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="https://source.unsplash.com/150x150/?girl" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="https://source.unsplash.com/150x150/?play" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="https://source.unsplash.com/150x150/?nature" alt="">
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+
 
       </div>
     </div>
@@ -1209,8 +626,21 @@
 
   <script src="app/js/jquery.js"></script>
   <script src="app/js/owl.carousel.js"></script>
-  <script src="app/js/bootstrap.min.js"></script>
+  <!-- <script src="app/js/bootstrap.min.js"></script> -->
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q=="
+    crossorigin="anonymous"></script>
   <script src="app/js/script.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        // indicators: true
+        // duration: 20,
+      });
+    })
+  </script>
 </body>
 
 </html>

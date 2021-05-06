@@ -7,25 +7,26 @@
   }
 
   h5 {
-    color: $blue;
+    color: $gray;
     font-weight: 800;
     text-transform: uppercase;
     display: inline-block;
     position: relative;
     overflow: inherit;
+    margin: 0;
     @include breakpoints-down(small) {
       font-size: $font-sm;
     }
   }
   h2 {
     display: block;
-    color: $darkBlue;
+    color: $lightOrang;
     font-weight: $font-w-bold;
     font-size: $font-h-lg;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     margin-bottom: 0;
+    margin-top: 0;
     position: relative;
-    line-height: 1.4;
     @include breakpoints-down(small) {
       font-size: $font-xl;
     }
@@ -51,12 +52,47 @@
     width: 5px;
   }
 }
+.head-seaction {
+  h1 {
+    font-size: $font-h;
+    text-transform: uppercase;
+  }
+  p {
+    font-weight: $font-w-normal;
+  }
+}
+
+.fw-bold {
+  font-weight: $font-w-bold !important;
+}
 
 .text {
   &-primary {
-    color: $orang !important;
+    color: $lightOrang !important;
   }
   &-blue {
     color: $darkBlue;
+  }
+  &-light {
+    color: $light;
+  }
+  &-white {
+    color: $white;
+  }
+  &-white-50 {
+    color: $white-50;
+  }
+  &-white-75 {
+    color: $white-75;
+  }
+
+  // Align
+  &-center {
+    text-align: center;
+  }
+
+  //@include
+  &-uppercase {
+    text-transform: uppercase !important;
   }
 }

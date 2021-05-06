@@ -9,13 +9,20 @@ html {
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: franklin;
+  src: url(../fonts/Franklin-Gothic-Demi-Cond-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+
 body {
   padding: 0;
   margin: 0;
   // font-family: "Public Sans", sans-serif;
-  font-family: "Manrope", sans-serif;
+  font-family: "franklin", "Manrope", sans-serif;
   font-size: 1.125rem;
   line-height: 1.3;
+  letter-spacing: 0.5px;
   background-color: $white;
 
   &.noscroll {
@@ -27,7 +34,7 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
-  transition: $animation-s;
+  // transition: $animation-s;
 }
 
 img {
@@ -45,12 +52,12 @@ ul {
 button,
 .button,
 .btn {
-  padding: 0.875rem 1.875rem;
-  border-radius: 10px;
+  // padding: 0.875rem 1.875rem;
+  border-radius: 7px;
   cursor: pointer;
-  color: $white;
-  font-weight: 400;
-  border: 0;
+  // color: $white;
+  // font-weight: 400;
+  // border: 0;
   overflow: hidden;
   @include breakpoints-down(small) {
     padding: 0.575rem 1.175rem;
@@ -62,13 +69,21 @@ button,
   }
   &.btn-primary {
     // background: linear-gradient(to right, $lightOrang, $orang);
-    background: $orang;
-  }
-  &.btn-secondary {
     background: $lightOrang;
   }
+  &.btn-secondary {
+    background: $orang;
+  }
 }
-
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
 // visibility
 .hide-for-mobile {
   @include breakpoints-down(medium) {

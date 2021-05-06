@@ -1,15 +1,28 @@
 .contact-area {
-  background-color: #fdf6ed;
+  background-color: $lightOrang;
+  position: relative;
   .form {
     input,
     textarea {
-      border-radius: 1.5rem;
+      border-radius: 14px;
       font-size: $font-sm;
-      padding: 15px;
-      border-color: $blue-50;
+      padding-left: 15px;
+      padding-right: 15px;
+      border: 1px solid $white;
+      background-color: $white;
+      box-sizing: border-box;
+      height: 54px;
+      &:focus {
+        border: 1px solid $lightOrang !important;
+        border-bottom: 1px solid $lightOrang !important;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2) !important;
+      }
       @include breakpoints-down(small) {
         padding: 10px 15px;
       }
+    }
+    button {
+      border-radius: 14px;
     }
   }
   .widget-box {
@@ -71,5 +84,17 @@
         }
       }
     }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: -160px;
+    top: -120px;
+    width: 400px;
+    transform: rotate(10deg);
+    height: 620px;
+    background-image: url(../../images/cody-rebot.png);
+    background-size: cover;
+    z-index: 2;
   }
 }

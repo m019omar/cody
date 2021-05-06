@@ -40,6 +40,10 @@
 
   nav {
     padding: 10px 0px;
+    background: transparent;
+    box-shadow: none;
+    height: auto;
+    line-height: inherit;
   }
 
   &__logo {
