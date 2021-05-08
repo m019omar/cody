@@ -57,14 +57,6 @@ button,
   overflow: hidden;
 }
 
-@media (max-width: 39.9375em) {
-  button,
-  .button,
-  .btn {
-    padding: 0.575rem 1.175rem;
-  }
-}
-
 button:hover,
 .button:hover,
 .btn:hover {
@@ -195,6 +187,7 @@ button.btn-secondary,
 .head-seaction h1 {
   font-size: 2.5rem;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .head-seaction p {
@@ -1000,6 +993,13 @@ button.btn-secondary,
   text-align: center;
 }
 
+@media (max-width: 39.9375em) {
+  .carousel .carousel-item {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .carousel .carousel-item .carousel-cover {
   width: 400px;
   height: 250px;
@@ -1007,6 +1007,13 @@ button.btn-secondary,
   border-radius: 2rem;
   border: 5px solid #585858;
   position: relative;
+}
+
+@media (max-width: 39.9375em) {
+  .carousel .carousel-item .carousel-cover {
+    width: 300px;
+    height: 200px;
+  }
 }
 
 .carousel .carousel-item .carousel-cover img {
@@ -1370,10 +1377,13 @@ button.btn-secondary,
 }
 
 .teacher-area .single-teacher .image {
+  width: 100%;
   text-align: center;
   position: relative;
   z-index: 1;
   overflow: hidden;
+  border-radius: 1rem;
+  max-height: 200px;
 }
 
 @media (max-width: 63.9375em) {
@@ -1384,7 +1394,6 @@ button.btn-secondary,
 
 .teacher-area .single-teacher .image img {
   width: 100%;
-  border-radius: 1rem;
 }
 
 .teacher-area .single-teacher .image::after {
@@ -1470,6 +1479,7 @@ button.btn-secondary,
   color: #0a124c;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 
 .teacher-area .single-teacher .content span {
@@ -1631,12 +1641,21 @@ button.btn-secondary,
   left: -160px;
   top: -120px;
   width: 400px;
+  height: 620px;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
-  height: 620px;
   background-image: url(../../images/cody-rebot.png);
   background-size: cover;
   z-index: 2;
+}
+
+@media (max-width: 39.9375em) {
+  .contact-area::before {
+    left: -60px;
+    top: -50px;
+    width: 130px;
+    height: 200px;
+  }
 }
 
 .footer-area {

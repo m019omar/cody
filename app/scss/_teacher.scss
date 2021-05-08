@@ -4,26 +4,27 @@
   background-repeat: no-repeat;
   background-position: center;
   .single-teacher {
+    // width: 100%;
     max-width: 350px;
+    // max-height: 200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     .image {
+      width: 100%;
       text-align: center;
       position: relative;
-      // max-width: 300px;
-      // max-height: 300px;
-      // margin: 0 auto;
       z-index: 1;
       overflow: hidden;
+      border-radius: 1rem;
+      max-height: 200px;
       @include breakpoints-down(medium) {
         max-width: 200px;
       }
       img {
         width: 100%;
-        border-radius: 1rem;
         // padding: 10px;
       }
 
@@ -102,6 +103,7 @@
         color: $darkBlue;
         font-weight: $font-w-bold;
         margin-bottom: 0.5rem;
+        margin-top: 0;
       }
       span {
         color: $orang;
