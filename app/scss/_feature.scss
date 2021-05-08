@@ -39,6 +39,7 @@
 
     &__body {
       padding: 1rem 0;
+      text-align: center;
     }
     &__heading {
       font-size: $font-xl;
@@ -46,6 +47,11 @@
       letter-spacing: normal;
       // line-height: 34px;
       margin-bottom: 16px;
+    }
+    p {
+      color: $gray;
+      font-size: $font-sm;
+      font-family: $font-f-manrope;
     }
   }
 }
