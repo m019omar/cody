@@ -131,6 +131,21 @@
       }
     }
   }
+  &[dir="rtl"] {
+    font-family: $font-f-tajawal;
+    .footer-area-widget h3::after {
+      right: 0;
+      left: auto;
+    }
+    .footer-area-widget .contact-info li {
+      padding-left: 0;
+      padding-right: 1.75rem;
+      i {
+        right: 0;
+        left: auto;
+      }
+    }
+  }
 }
 
 .copyright-area {

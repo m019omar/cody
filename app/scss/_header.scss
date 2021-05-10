@@ -128,6 +128,24 @@
       }
     }
   }
+  &__link_lange {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    margin: 0 0.5rem;
+    height: 34px;
+    width: 54px;
+    color: $gray;
+    font-weight: $font-w-bold;
+    font-size: $font-sm;
+    i {
+      height: auto;
+    }
+    &:hover {
+      color: $orang;
+    }
+  }
 
   &__cta {
     color: $white;
@@ -138,6 +156,14 @@
 
     &:hover {
       opacity: 0.75;
+    }
+  }
+
+  // Direction RTL
+  &[dir="rtl"] {
+    .header__links a:not(:last-child) {
+      margin-right: 0;
+      margin-left: 32px;
     }
   }
 }

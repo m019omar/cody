@@ -8,6 +8,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
+* [dir="rtl"] {
+  font-family: $font-f-tajawal;
+}
 
 @font-face {
   font-family: franklin;

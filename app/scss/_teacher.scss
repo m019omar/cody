@@ -23,6 +23,12 @@
       @include breakpoints-down(medium) {
         max-width: 200px;
       }
+      @include breakpoints-up(large) {
+        max-height: 150px;
+      }
+      @include breakpoints-up(xlarge) {
+        max-height: 200px;
+      }
       img {
         width: 100%;
         // padding: 10px;

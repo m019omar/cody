@@ -1,0 +1,14 @@
+:dir(rtl) {
+  .contact-area::before {
+    left: auto;
+    right: -160px;
+  }
+}
+
+body[dir="rtl"] {
+  .contact-area::before {
+    left: auto;
+    right: -160px;
+    transform: rotate(-10deg);
+  }
+}

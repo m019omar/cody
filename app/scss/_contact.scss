@@ -23,6 +23,7 @@
     }
     button {
       border-radius: 14px;
+      width: 100%;
     }
   }
   .widget-box {
@@ -85,6 +86,9 @@
       }
     }
   }
+  h1 {
+    font-size: $font-h;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -101,6 +105,18 @@
       top: -50px;
       width: 130px;
       height: 200px;
+    }
+  }
+  &[dir="rtl"] {
+    font-family: $font-f-tajawal;
+    &::before {
+      right: -160px;
+      left: auto;
+      transform: rotate(-10deg);
+      @include breakpoints-down(small) {
+        right: 00px;
+        transform: rotate(0deg);
+      }
     }
   }
 }
